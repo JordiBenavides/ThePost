@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,6 @@
 				9898643201EB9A41D2BE551A /* Pods-ThePost.debug.xcconfig */,
 				0A228CBD2461FD183E71B797 /* Pods-ThePost.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +80,63 @@
 		9D4654352587C4A100ED341A /* ThePost */ = {
 			isa = PBXGroup;
 			children = (
-				9D4654362587C4A100ED341A /* AppDelegate.swift */,
-				9D4654382587C4A100ED341A /* SceneDelegate.swift */,
-				9D46543A2587C4A100ED341A /* ViewController.swift */,
-				9D46543C2587C4A100ED341A /* Main.storyboard */,
-				9D46543F2587C4AF00ED341A /* Assets.xcassets */,
-				9D4654412587C4AF00ED341A /* LaunchScreen.storyboard */,
-				9D4654442587C4AF00ED341A /* Info.plist */,
+				9D46544E2587C6CA00ED341A /* Application */,
+				9D46544A2587C67800ED341A /* Main */,
+				9D46544F2587C6D500ED341A /* Resources */,
 			);
 			path = ThePost;
+			sourceTree = "<group>";
+		};
+		9D46544A2587C67800ED341A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9D46544B2587C68900ED341A /* Model */,
+				9D46544C2587C6A100ED341A /* View */,
+				9D46544D2587C6A800ED341A /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9D46544B2587C68900ED341A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9D46544C2587C6A100ED341A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D46543A2587C4A100ED341A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D46544D2587C6A800ED341A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9D46544E2587C6CA00ED341A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9D4654382587C4A100ED341A /* SceneDelegate.swift */,
+				9D4654362587C4A100ED341A /* AppDelegate.swift */,
+				9D4654442587C4AF00ED341A /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9D46544F2587C6D500ED341A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D4654412587C4AF00ED341A /* LaunchScreen.storyboard */,
+				9D46543F2587C4AF00ED341A /* Assets.xcassets */,
+				9D46543C2587C4A100ED341A /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,7 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ThePost/Info.plist;
+				INFOPLIST_FILE = ThePost/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ThePost/Info.plist;
+				INFOPLIST_FILE = ThePost/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
