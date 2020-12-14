@@ -15,6 +15,7 @@
 		9D4654402587C4AF00ED341A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D46543F2587C4AF00ED341A /* Assets.xcassets */; };
 		9D4654432587C4AF00ED341A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4654412587C4AF00ED341A /* LaunchScreen.storyboard */; };
 		9D4654522587C84600ED341A /* ThePostAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4654512587C84600ED341A /* ThePostAPI.swift */; };
+		9D4654542587CC0500ED341A /* ThePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4654532587CC0500ED341A /* ThePost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9D4654422587C4AF00ED341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D4654442587C4AF00ED341A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D4654512587C84600ED341A /* ThePostAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePostAPI.swift; sourceTree = "<group>"; };
+		9D4654532587CC0500ED341A /* ThePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +84,8 @@
 		9D4654352587C4A100ED341A /* ThePost */ = {
 			isa = PBXGroup;
 			children = (
-				9D4654502587C82000ED341A /* Network */,
 				9D46544E2587C6CA00ED341A /* Application */,
+				9D4654502587C82000ED341A /* Network */,
 				9D46544A2587C67800ED341A /* Main */,
 				9D46544F2587C6D500ED341A /* Resources */,
 			);
@@ -103,6 +105,7 @@
 		9D46544B2587C68900ED341A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D4654532587CC0500ED341A /* ThePost.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				9D4654522587C84600ED341A /* ThePostAPI.swift in Sources */,
 				9D46543B2587C4A100ED341A /* ViewController.swift in Sources */,
 				9D4654372587C4A100ED341A /* AppDelegate.swift in Sources */,
+				9D4654542587CC0500ED341A /* ThePost.swift in Sources */,
 				9D4654392587C4A100ED341A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
