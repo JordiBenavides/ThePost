@@ -13,6 +13,11 @@ struct ResposableAPIArray: Codable {
     let data:[ThePost]
 }
 
+struct ResponseAPI: Codable {
+    
+    let data: ThePost
+}
+
 struct ThePost: Codable {
     
     let id: Int

@@ -12,6 +12,7 @@ import Moya
 enum ThePostAPI {
     
     case getThePost
+    case getPostById(id: Int)
 }
 
 extension ThePostAPI:TargetType,AccessTokenAuthorizable {
@@ -21,12 +22,16 @@ extension ThePostAPI:TargetType,AccessTokenAuthorizable {
         switch self {
         case .getThePost:
             return "posts"
+        case .getPostById(id: let id):
+            return "posts/\(id)"
         }
     }
     
     var method: Moya.Method {
         switch self {
         case .getThePost:
+            return .get
+        case .getPostById(id: _):
             return .get
         }
     }
@@ -35,12 +40,16 @@ extension ThePostAPI:TargetType,AccessTokenAuthorizable {
         switch self {
         case .getThePost:
             return .bearer
+        case .getPostById(id: _):
+            return .bearer
         }
     }
     
     public var task: Task {
         switch self {
         case .getThePost:
+            return .requestPlain
+        case .getPostById(id: _):
             return .requestPlain
         }
     }

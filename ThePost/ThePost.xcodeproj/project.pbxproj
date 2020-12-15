@@ -10,7 +10,7 @@
 		215D4D8AA6B5388D2F2E83BC /* Pods_ThePost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439F45671E7E6CDB79E2E134 /* Pods_ThePost.framework */; };
 		9D4654372587C4A100ED341A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4654362587C4A100ED341A /* AppDelegate.swift */; };
 		9D4654392587C4A100ED341A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4654382587C4A100ED341A /* SceneDelegate.swift */; };
-		9D46543B2587C4A100ED341A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46543A2587C4A100ED341A /* ViewController.swift */; };
+		9D46543B2587C4A100ED341A /* ThePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46543A2587C4A100ED341A /* ThePostViewController.swift */; };
 		9D46543E2587C4A100ED341A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D46543C2587C4A100ED341A /* Main.storyboard */; };
 		9D4654402587C4AF00ED341A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D46543F2587C4AF00ED341A /* Assets.xcassets */; };
 		9D4654432587C4AF00ED341A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4654412587C4AF00ED341A /* LaunchScreen.storyboard */; };
@@ -19,6 +19,8 @@
 		9D4654562587CF4900ED341A /* ViewModelThePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4654552587CF4900ED341A /* ViewModelThePost.swift */; };
 		9D46545A2587D60E00ED341A /* ThePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4654582587D60E00ED341A /* ThePostTableViewCell.swift */; };
 		9D46545B2587D60E00ED341A /* ThePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D4654592587D60E00ED341A /* ThePostTableViewCell.xib */; };
+		9D46545D2587DB4200ED341A /* ViewModelOnePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46545C2587DB4200ED341A /* ViewModelOnePost.swift */; };
+		9D46545F2587DF9D00ED341A /* OnePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D46545E2587DF9D00ED341A /* OnePostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +30,7 @@
 		9D4654332587C4A100ED341A /* ThePost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4654362587C4A100ED341A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D4654382587C4A100ED341A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D46543A2587C4A100ED341A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D46543A2587C4A100ED341A /* ThePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePostViewController.swift; sourceTree = "<group>"; };
 		9D46543D2587C4A100ED341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D46543F2587C4AF00ED341A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D4654422587C4AF00ED341A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		9D4654552587CF4900ED341A /* ViewModelThePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelThePost.swift; sourceTree = "<group>"; };
 		9D4654582587D60E00ED341A /* ThePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThePostTableViewCell.swift; sourceTree = "<group>"; };
 		9D4654592587D60E00ED341A /* ThePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThePostTableViewCell.xib; sourceTree = "<group>"; };
+		9D46545C2587DB4200ED341A /* ViewModelOnePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelOnePost.swift; sourceTree = "<group>"; };
+		9D46545E2587DF9D00ED341A /* OnePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnePostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,8 @@
 		9D46544C2587C6A100ED341A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9D46543A2587C4A100ED341A /* ViewController.swift */,
+				9D46543A2587C4A100ED341A /* ThePostViewController.swift */,
+				9D46545E2587DF9D00ED341A /* OnePostViewController.swift */,
 				9D4654572587D5D800ED341A /* Cell */,
 			);
 			path = View;
@@ -129,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				9D4654552587CF4900ED341A /* ViewModelThePost.swift */,
+				9D46545C2587DB4200ED341A /* ViewModelOnePost.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -287,10 +293,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D4654522587C84600ED341A /* ThePostAPI.swift in Sources */,
-				9D46543B2587C4A100ED341A /* ViewController.swift in Sources */,
+				9D46543B2587C4A100ED341A /* ThePostViewController.swift in Sources */,
 				9D46545A2587D60E00ED341A /* ThePostTableViewCell.swift in Sources */,
 				9D4654372587C4A100ED341A /* AppDelegate.swift in Sources */,
 				9D4654542587CC0500ED341A /* ThePost.swift in Sources */,
+				9D46545D2587DB4200ED341A /* ViewModelOnePost.swift in Sources */,
+				9D46545F2587DF9D00ED341A /* OnePostViewController.swift in Sources */,
 				9D4654562587CF4900ED341A /* ViewModelThePost.swift in Sources */,
 				9D4654392587C4A100ED341A /* SceneDelegate.swift in Sources */,
 			);
